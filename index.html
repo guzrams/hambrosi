@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+    <title>Hambrosi</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://file.myfontastic.com/t5tNwfwUapz4yDzK3B6sfe/icons.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+   <header class="header">
+     <div class="contenedor">
+       <img src="img/logo.jpg" class="logo">
+       <span class="icon-menu" id="btn-menu"></span>
+       <nav class="nav" id="nav"></nav>
+       <ul class="menu">
+         <li class="menu__item"><a class="menu__link">Inicio</a></li>
+         <li class="menu__item"><a class="menu__link">Menu</a></li>
+         <li class="menu__item"><a class="menu__link">Fotos</a></li>
+         <li class="menu__item"><a class="menu__link">Contactos</a></li>
+       </ul>
+     </div>
+   </header>
+   <div class="banner">
+     <img src="img/banner.jpg">
+     <div class="contenedor">
+       <h1 class="banner__titulo">LA MEJOR COMIDA RAPIDA</h1>
+       <p class="banner__txt">Bienvenidos a Nuestra Pagina</p>
+     </div>
+   </div>
+   <main class="main">
+     <section class="info">
+       <div class="contenedor">
+         <article class="info__columna">
+           <img class="info__img" src="img/1.jpg">
+           <h2 class="info__titulo">Titulo 1</h2>
+           <p class="info__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+         </article>
+         <article class="info__columna">
+           <img class="info__img" src="img/2.jpg">
+           <h2 class="info__titulo">Titulo 2</h2>
+           <p class="info__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+         </article>
+         <article class="info__columna">
+           <img class="info__img" src="img/3.jpg">
+           <h2 class="info__titulo">Titulo 3</h2>
+           <p class="info__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+         </article>
+       </div>
+     </section>
+     <section class="platos">
+       <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/4.jpg"></div>
+            <div class="swiper-slide"><img src="img/5.jpg"></div>
+            <div class="swiper-slide"><img src="img/6.jpg"></div>
+            <div class="swiper-slide"><img src="img/7.jpg"></div>
+            <div class="swiper-slide"><img src="img/1.jpg"></div>
+            <div class="swiper-slide"><img src="img/2.jpg"></div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+       </div>
+     </section>
+     <div class="mapa">
+       <div class="contenedor">
+         <div class="mapa__iframe">
+           <h3>DONDE ESTAMOS?</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+           consequat.</p>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.8332875261895!2d-68.15120678560491!3d-16.487885988623443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edff40775132f%3A0xfe0134366be64ec0!2sEx%20Fabrica%20Said!5e1!3m2!1ses!2sbo!4v1611008724171!5m2!1ses!2sbo" width="90%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+         </div>
+       </div>
+     </div>
+   </main>
+   <footer class="footer">
+     <div class="social">
+       <img src="img/icono1.png">
+       <img src="img/icono2.png">
+       <img src="img/icono3.png">
+     </div>
+     <p class="copy">&copy Todos los derechos Reservados a Grover Guzmán Ramos | 2021</p>
+   </footer>
+   <script src="js/menu.js"></script>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate: 30,
+          stretch: 0,
+          depth: 200,
+          modifier: 1,
+          slideShadows: true,
+        },
+        loop: true,
+        autoplay: {
+          delay: 1000,
+          disableOnInteraction: false,
+        },
+      });
+   </script>
+</body>
+</html>
